@@ -1,11 +1,11 @@
 <h1 align="center">Olá 👋, me chamo Rafael Bezerra</h1>
 <h3 align="center">Estudante de TI e um Amante de Cinema</h3>
 
-- 🌱 I’m currently learning **Desenvolvimento de Sistemas**
+- 🌱 Atualmente estou aprendendo **Desenvolvimento de Sistemas**
 
-- 📫 How to reach me **rafaelb120934@gmail.com**
+- 📫 Como chegar até mim **rafaelb120934@gmail.com**
 
-- ⚡ Fun fact **Os sêniors que lutem, eu sei printar um "Hello Word"**
+- ⚡ Fato Engraçado **Os sêniors que lutem, eu sei printar um "Hello Word"**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
