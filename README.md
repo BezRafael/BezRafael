@@ -1,5 +1,5 @@
 <h1 align="center">Olá 👋, me chamo Rafael Bezerra</h1>
-<h3 align="center">Estudante de TI e um Amante de Cinema</h3>
+<h3 align="center">Estudante de TI e Amante de Cinema</h3>
 
 - 🌱 Atualmente estou aprendendo **Desenvolvimento de Sistemas**
 
