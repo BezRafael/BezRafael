@@ -1,4 +1,4 @@
-<h1 align="center">Olá 👋, sou Rafael Bezerra</h1>
+<h1 align="center">Olá 👋, me chamo Rafael Bezerra</h1>
 <h3 align="center">Estudante de TI e um Amante de Cinema</h3>
 
 - 🌱 I’m currently learning **Desenvolvimento de Sistemas**
