@@ -1,7 +1,7 @@
 <h1 align="center">Olá 👋, me chamo Rafael Bezerra</h1>
 <h3 align="center">Estudante de TI e Amante de Cinema</h3>
 
-- 🌱 Atualmente estou aprendendo **Desenvolvimento de Sistemas**
+- 🌱 Atualmente estou estudando **Desenvolvimento de Sistemas**
 
 - 📫 Como chegar até mim **rafaelb120934@gmail.com**
 
