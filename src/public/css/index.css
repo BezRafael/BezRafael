@@ -8,11 +8,11 @@ body{
     gap: 100px;
 }
 
-
+/*ÁREA DO BANNER*/
 #banner{
     display: flex;
     flex-direction: row;
-    background-color: lightcoral;
+    background-color: darkred;
     border-radius: 30px;
     width: 1200px;
     height: 500px;
@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightcoral;
+    background-color: darkred;
     color: white;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -33,21 +33,22 @@ body{
 }
 
 .imagem_banner{
-    background-color: lightcoral;
+    background-color: darkred;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 600px;
     height: 100%;
 }
 
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
 #conteinner_informacoes{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: lightgray;
     width: 1200px;
     height: 100%;
     gap: 100px;
+    margin-bottom: 1100px;
 }
 
 
@@ -55,7 +56,8 @@ body{
     text-align: center;
     font-size: 45px;
     font-family: sans-serif;
-    background-color: lightcoral;
+    background-color: darkred;
+    color: white;
     border-radius: 30px;
     width: 500px;
     margin-bottom: -30px;
@@ -66,13 +68,15 @@ body{
     flex-direction: row;
     width: 100%;
     height: 450px;
+    border-radius: 30px;
 }
 
 .area_texto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightcoral;
+    background-color: darkred;
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 600px;
@@ -81,11 +85,26 @@ body{
     font-family: sans-serif;
 }
 
+.botao_audio{
+    background-color: lightgray;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    width: 80px;
+    height: 80px;
+
+}
+
+.botao_audio:hover{
+    background-color: darkgrey;
+}
+
 #area_textoEsquerda{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightcoral;
+    background-color: lightgray;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 600px;
@@ -98,7 +117,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightpink;
+    background-color: darkred;
+    color: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 600px;
@@ -112,43 +132,113 @@ body{
     overflow: auto;
 }
 
-.botao_audio{
-    margin-bottom: 20px;
-    margin-left: 300px;
-    width: 80px;
-    height: 80px;
-
-}
-
 .area_img{
     display: flex;
+    background-color: lightgrey;
     justify-content: center;
-    background-color: lightblue;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 600px;
-    height: 100%;
-
 }
 
 .img_informacao{
     width: 420px;
     height: 100%;
+    border-radius: 30px;
 }
 
 #img_informacaoEsquerda{
     width: 300px;
+    height: 100%;
+    border-radius: 30px;
 }
 
 #img_informacaoDireita{
     width: 300px;
+    height: 100%;
+    border-radius: 30px;
 }
 
-@media (max-width:375px){
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+#conteinner_intervalo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    gap: 100px;
+}
+
+#intervalo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 450px;
+}
+
+#intervalo_homens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkred;
+    color: white;
+    width: 600px;
+    height: 100%;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#intervalo_mulheres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    width: 600px;
+    height: 100%;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#img_homens{
+    width: 220px;
+    height: 220px;
+}
+
+#img_mulheres{
+    width: 220px;
+    height: 220px;
+}
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+#conteinner_rodape{
+    width: 1200px;
+    border-top: 4px solid red;
+    background-color: lightgray;
+}
+
+#rodape_sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: sans-serif;
+    list-style: none;
+    padding-inline: 15px;
+}
+
+
+@media (max-width:350px){
     body{
         gap: 100px;
     }
 
+/*ÁREA DO BANNER*/
     #banner{
         flex-direction: column-reverse;
         width: 100%;
@@ -172,14 +262,16 @@ body{
         width: 100%;
     }
 
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
     #conteinner_informacoes{
         width: 100%;
-        gap: 440px;
+        gap: 400px;
+        margin-bottom: 2770px;
     }
 
     .title_secao{
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 150px;
     }
 
     .informacao{
@@ -194,7 +286,7 @@ body{
         border-bottom-right-radius: 20px;
         width: 100%;
         font-size: 22px;
-        margin-bottom: 80px;
+        margin-bottom: 180px;
     }
 
     #area_textoEsquerda{
@@ -203,6 +295,431 @@ body{
         border-top-right-radius: 0;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        border-bottom: none;
+    }
+
+    #area_textoDireita{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .botao_audio{
+        margin-left: 200px;
+    }
+
+    .area_img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .img_informacao{
+        width: 100%;
+    }
+
+    #img_informacaoEsquerda{
+        width: 100%;
+    }
+    
+    #img_informacaoDireita{
+        width: 100%;
+    }
+
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+    #conteinner_intervalo{
+        width: 100%;
+    }
+
+    #intervalo{
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    #intervalo_homens{
+        margin-top: -200px;
+        margin-bottom: -120px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    #intervalo_mulheres{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+    #conteinner_rodape{
+        width: 100%;
+        margin-top: 580px;
+    }
+    
+    #rodape_sobre{
+        text-align: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+@media (min-width:351px) and (max-width:375px) {
+    body{
+        gap: 100px;
+    }
+
+/*ÁREA DO BANNER*/
+    #banner{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #texto_banner{
+        font-size: 18px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+    }
+
+    .imagem_banner{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+    }
+
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
+    #conteinner_informacoes{
+        width: 100%;
+        gap: 420px;
+        margin-bottom: 2650px;
+    }
+
+    .title_secao{
+        width: 100%;
+        margin-bottom: 220px;
+    }
+
+    .informacao{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+
+    .area_texto{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 180px;
+    }
+
+    #area_textoEsquerda{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: none;
+    }
+
+    #area_textoDireita{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .botao_audio{
+        margin-left: 200px;
+    }
+
+    .area_img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .img_informacao{
+        width: 100%;
+    }
+
+    #img_informacaoEsquerda{
+        width: 100%;
+    }
+    
+    #img_informacaoDireita{
+        width: 100%;
+    }
+
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+    #conteinner_intervalo{
+        width: 100%;
+    }
+
+    #intervalo{
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    #intervalo_homens{
+        margin-top: -220px;
+        margin-bottom: -120px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    #intervalo_mulheres{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+    #conteinner_rodape{
+        width: 100%;
+        margin-top: 420px;
+    }
+    
+    #rodape_sobre{
+        text-align: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (min-width:380px) and (max-width:400px){
+    body{
+        gap: 100px;
+    }
+
+/*ÁREA DO BANNER*/
+    #banner{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #texto_banner{
+        font-size: 18px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+    }
+
+    .imagem_banner{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+    }
+
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
+    #conteinner_informacoes{
+        width: 100%;
+        gap: 480px;
+        margin-bottom: 2850px;
+    }
+
+    .title_secao{
+        width: 100%;
+        margin-bottom: 220px;
+    }
+
+    .informacao{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+
+    .area_texto{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 180px;
+    }
+
+    #area_textoEsquerda{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: none;
+    }
+
+    #area_textoDireita{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .botao_audio{
+        margin-left: 200px;
+    }
+
+    .area_img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .img_informacao{
+        width: 100%;
+    }
+
+    #img_informacaoEsquerda{
+        width: 100%;
+    }
+    
+    #img_informacaoDireita{
+        width: 100%;
+    }
+
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+    #conteinner_intervalo{
+        width: 100%;
+    }
+
+    #intervalo{
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    #intervalo_homens{
+        margin-top: -220px;
+        margin-bottom: -120px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        font-size: 27px;
+    }
+    
+    #intervalo_mulheres{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 27px;
+    }
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+    #conteinner_rodape{
+        width: 100%;
+        margin-top: 420px;
+    }
+    
+    #rodape_sobre{
+        text-align: center;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 28px;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px){
+    body{
+        gap: 100px;
+    }
+
+/*ÁREA DO BANNER*/
+    #banner{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #texto_banner{
+        font-size: 18px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+    }
+
+    .imagem_banner{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+    }
+
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
+    #conteinner_informacoes{
+        width: 100%;
+        gap: 550px;
+        margin-bottom: 2920px;
+    }
+
+    .title_secao{
+        width: 100%;
+        margin-bottom: 200px;
+    }
+
+    .informacao{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+
+    .area_texto{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 220px;
+    }
+
+    #area_textoEsquerda{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 50px;
     }
 
     #area_textoDireita{
@@ -222,175 +739,66 @@ body{
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        border-bottom: none;
         width: 100%;
     }
 
     .img_informacao{
         width: 100%;
     }
-}
 
-@media (min-width:380px) and (max-width:400px){
+    #img_informacaoEsquerda{
+        width: 100%;
+    }
     
-    #banner{
-        flex-direction: column-reverse;
+    #img_informacaoDireita{
         width: 100%;
     }
 
-    #texto_banner{
-        font-size: 18px;
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+    #conteinner_intervalo{
+        width: 100%;
+    }
+
+    #intervalo{
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    #intervalo_homens{
+        margin-top: -220px;
+        margin-bottom: -120px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        font-size: 27px;
+    }
+    
+    #intervalo_mulheres{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 27px;
+    }
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+    #conteinner_rodape{
+        width: 100%;
+        margin-top: 380px;
+    }
+    
+    #rodape_sobre{
         text-align: center;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-    }
-
-    .imagem_banner{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        width: 100%;
-    }
-
-    #conteinner_informacoes{
-        width: 100%;
-        gap: 350px;
-    }
-
-    .title_secao{
-        width: 100%;
-        margin-bottom: 80px;
-    }
-
-    .informacao{
-        flex-direction: column-reverse;
-        height: 800px;
-    }
-
-    .area_texto{
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-        font-size: 25px;
-        margin-bottom: -50px;
-    }
-
-    #area_textoEsquerda{
-        width: 100%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    #area_textoDireita{
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .botao_audio{
-        margin-left: 250px;
-    }
-
-    .area_img{
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .img_informacao{
-        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 28px;
     }
 }
 
-@media (min-width:401px) and (max-width:767px){
-    #banner{
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
-    #texto_banner{
-        font-size: 18px;
-        text-align: center;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-    }
-
-    .imagem_banner{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        width: 100%;
-    }
-
-    #conteinner_informacoes{
-        width: 100%;
-        gap: 450px;
-    }
-
-    .title_secao{
-        width: 100%;
-        margin-bottom: -80px;
-    }
-
-    .informacao{
-        flex-direction: column-reverse;
-        height: 800px;
-    }
-
-    .area_texto{
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-        font-size: 30px;
-        margin-bottom: -180px;
-    }
-
-    #area_textoEsquerda{
-        width: 100%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    #area_textoDireita{
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .botao_audio{
-        margin-left: 280px;
-    }
-
-    .area_img{
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .img_informacao{
-        width: 100%;
-    }
+@media (min-width: 501px) and (max-width:900px){
+    
 }
