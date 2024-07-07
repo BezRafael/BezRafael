@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/public/css/index.css">
+    <script src="/src/public/js/index.js"></script>
     <title></title>
 </head>
 <body>
@@ -29,21 +30,75 @@
     <main>
         <ul id="conteinner_requisitos">
             <li>
-                <button class="requisito">
+                <dialog id="dialog_1" class="dialog">
+                    <button onclick="fechar_dialog1()" class="botao_fecharDialog">X</button>
+    
+                    <h1 style="text-align: center;">Título</h1>
+                    <p style="text-align: center;" class="paragrafo_dialog">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Eos quod harum magni 
+                        aperiam, et adipisci recusandae sint 
+                        sapiente quisquam culpa ratione itaque 
+                        facere exercitationem ex consequuntur 
+                        sit aut debitis quas.
+                    </p>
+    
+                    <button class="botao_audioDialog" id="botao_audioDialog1">
+                        <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                    </button>
+                </dialog>
+
+                <button class="requisito" onclick="abrir_dialog1()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
 
             <li>
-                <button class="requisito">
+                <dialog id="dialog_2" class="dialog">
+                    <button onclick="fechar_dialog2()" class="botao_fecharDialog">X</button>
+    
+                    <h1 style="text-align: center;">Título 2</h1>
+                    <p style="text-align: center;" class="paragrafo_dialog">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Eos quod harum magni 
+                        aperiam, et adipisci recusandae sint 
+                        sapiente quisquam culpa ratione itaque 
+                        facere exercitationem ex consequuntur 
+                        sit aut debitis quas.  
+                    </p>
+    
+                    <button class="botao_audioDialog" id="botao_audioDialog2">
+                        <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                    </button>
+                </dialog>
+
+                <button class="requisito" onclick="abrir_dialog2()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
 
             <li>
-                <button class="requisito">
+                <dialog id="dialog_3" class="dialog">
+                    <button onclick="fechar_dialog3()" class="botao_fecharDialog">X</button>
+    
+                    <h1 style="text-align: center;">Título 3</h1>
+                    <p style="text-align: center;" class="paragrafo_dialog">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Eos quod harum magni 
+                        aperiam, et adipisci recusandae sint 
+                        sapiente quisquam culpa ratione itaque 
+                        facere exercitationem ex consequuntur 
+                        sit aut debitis quas.  
+                    </p>
+    
+                    <button class="botao_audioDialog" id="botao_audioDialog3">
+                        <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                    </button>
+                </dialog>
+
+                <button class="requisito" onclick="abrir_dialog3()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
