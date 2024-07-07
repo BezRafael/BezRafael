@@ -8,6 +8,28 @@ body{
     gap: 100px;
 }
 
+
+/*ÁREA DA BARRA INICIAL*/
+#barra_inicial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid darkred;
+    background-color: lightgray;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 1200px;
+    height: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#img_logo{
+    width: 60px;
+    height: 50px;
+}
+
 /*ÁREA DO BANNER*/
 #banner{
     display: flex;
@@ -38,6 +60,51 @@ body{
     border-bottom-right-radius: 30px;
     width: 600px;
     height: 100%;
+}
+
+
+/*ÁREA "REQUISITOS"*/
+#conteinner_requisitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+    height: 200px;
+    background-color: lightgray;
+    padding-inline: 25px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    list-style: none;
+    border-radius: 30px;
+}
+
+.requisito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: lightgray;
+    margin-top: -80px;
+    width: 250px;
+    height: 350px;
+    border: 5px solid darkred;
+    border-radius: 30px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.img_requisito{
+    
+    border-radius: 10%;
+    width: 250px;
+    height: 250px
+}
+
+.gif_clique{
+    border: 3px solid darkred;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
@@ -96,6 +163,11 @@ body{
 
 }
 
+.img_audio{
+    width: 50px;
+    height: 50px;
+}
+
 .botao_audio:hover{
     background-color: darkgrey;
 }
@@ -104,7 +176,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: darkred;
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 600px;
@@ -117,8 +190,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkred;
-    color: white;
+    background-color: lightgray;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 600px;
@@ -218,25 +290,33 @@ body{
 /*ÁREA DO RODAPÉ "SOBRE"*/
 #conteinner_rodape{
     width: 1200px;
-    border-top: 4px solid red;
+    border-top: 4px solid darkred;
     background-color: lightgray;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 #rodape_sobre{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 18px;
     font-family: sans-serif;
     list-style: none;
     padding-inline: 15px;
 }
 
-
+/*TELA SMARTPHONE*/
 @media (max-width:350px){
     body{
         gap: 100px;
     }
+
+ /*ÁREA DA BARRA INICIAL*/
+    #barra_inicial{
+        width: 100%;
+        margin-bottom: -40px;
+    }   
 
 /*ÁREA DO BANNER*/
     #banner{
@@ -262,6 +342,16 @@ body{
         width: 100%;
     }
 
+ /*ÁREA DOS REQUISITOS*/   
+    #conteinner_requisitos{
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+        gap: 150px;
+        margin-bottom: 900px;
+        padding: 0;
+    }
+    
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
     #conteinner_informacoes{
         width: 100%;
@@ -370,14 +460,21 @@ body{
         text-align: center;
         flex-direction: column;
         gap: 40px;
+        font-size: 22px;
     }
 }
 
-
+/*TELA SMARTPHONE*/
 @media (min-width:351px) and (max-width:375px) {
     body{
         gap: 100px;
     }
+
+ /*ÁREA DA BARRA INICIAL*/
+ #barra_inicial{
+    width: 100%;
+    margin-bottom: 50px;
+}   
 
 /*ÁREA DO BANNER*/
     #banner{
@@ -401,6 +498,16 @@ body{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         width: 100%;
+    }
+
+/*ÁREA DOS REQUISITOS*/   
+    #conteinner_requisitos{
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+        gap: 150px;
+        margin-bottom: 900px;
+        padding: 0;
     }
 
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
@@ -511,13 +618,21 @@ body{
         text-align: center;
         flex-direction: column;
         gap: 40px;
+        font-size: 25px;
     }
 }
 
+/*TELA SMARTPHONE*/
 @media (min-width:380px) and (max-width:400px){
     body{
         gap: 100px;
     }
+
+ /*ÁREA DA BARRA INICIAL*/
+ #barra_inicial{
+    width: 100%;
+    margin-bottom: 50px;
+}   
 
 /*ÁREA DO BANNER*/
     #banner{
@@ -541,6 +656,16 @@ body{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         width: 100%;
+    }
+
+    /*ÁREA DOS REQUISITOS*/   
+    #conteinner_requisitos{
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+        gap: 150px;
+        margin-bottom: 900px;
+        padding: 0;
     }
 
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
@@ -657,10 +782,18 @@ body{
     }
 }
 
+
+/*TELA SMARTPHONE*/
 @media (min-width:401px) and (max-width:500px){
     body{
         gap: 100px;
     }
+
+ /*ÁREA DA BARRA INICIAL*/
+    #barra_inicial{
+        width: 100%;
+        margin-bottom: 60px;
+    }   
 
 /*ÁREA DO BANNER*/
     #banner{
@@ -684,6 +817,16 @@ body{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         width: 100%;
+    }
+
+    /*ÁREA DOS REQUISITOS*/   
+    #conteinner_requisitos{
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+        gap: 150px;
+        margin-bottom: 900px;
+        padding: 0;
     }
 
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
@@ -799,6 +942,97 @@ body{
     }
 }
 
-@media (min-width: 501px) and (max-width:900px){
+/*TELA TABLET*/
+@media (min-width: 700px) and (max-width:800px){
+ /*ÁREA DA BARRA INICIAL*/
+    #barra_inicial{
+        width: 100%;
+    }   
+
+/*ÁREA DO BANNER*/
+    #banner{
+        width: 100%;
+    }
+
+    #texto_banner{
+        font-size: 18px;
+    }
+
+    .imagem_banner{
+        width: 450px;
+        height: 500px;
+    }
+
+    /*ÁREA DOS REQUISITOS*/   
+    #conteinner_requisitos{
+        background-color: transparent;
+        width: 100%;
+        padding-inline: 0;
+        gap: 32px;
+    }
+
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
+    #conteinner_informacoes{
+        width: 100%;
+    }
+
+    .title_secao{
+        width: 100%;
+    }
+
+
+    .area_texto{
+        font-size: 23px;
+    }
+
+    #area_textoEsquerda{
+        width: 100%;
+    }
+
+    #area_textoDireita{
+        width: 100%;
+    }
+
+    .botao_audio{
+        margin-left: 220px;
+    }
+
+    .area_img{
+        width: 600px;
+    }
+
+    .img_informacao{
+        width: 100%;
+    }
+
+    #img_informacaoEsquerda{
+        width: 220px;
+    }
     
+    #img_informacaoDireita{
+        width: 220px;
+    }
+
+/*ÁREA "INTERVALO DE DOAÇÕES"*/
+    #conteinner_intervalo{
+        margin-top: -380px;
+        width: 100%;
+    }
+
+    #intervalo_homens{
+        width: 100%;
+    }
+    
+    #intervalo_mulheres{
+        width: 100%;
+    }
+
+/*ÁREA DO RODAPÉ "SOBRE"*/
+    #conteinner_rodape{
+        width: 100%;
+    }
+    
+    #rodape_sobre{
+        font-size: 25px;
+    } 
 }
