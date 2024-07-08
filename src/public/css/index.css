@@ -367,6 +367,11 @@ body{
     padding-inline: 15px;
 }
 
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*TELA SMARTPHONE*/
 @media (max-width:350px){
     body{
