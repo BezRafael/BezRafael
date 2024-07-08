@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/public/css/index.css">
     <script src="/src/public/js/index.js"></script>
+    <script src="/src/public/js/script.js" defer></script>
+   
     <title></title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <main id="banner">
         <div id="texto_banner">
             <h1>
-                Prepare-se para Doar
+                Prepare-se para Doar:
                 <br>
                 Requisitos e Dicas Importantes!
             </h1>
@@ -35,69 +37,57 @@
     
                     <h1 style="text-align: center;">Título</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Eos quod harum magni 
-                        aperiam, et adipisci recusandae sint 
-                        sapiente quisquam culpa ratione itaque 
-                        facere exercitationem ex consequuntur 
-                        sit aut debitis quas.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
                     </p>
     
-                    <button class="botao_audioDialog" id="botao_audioDialog1">
+                    <button class="botao_audioDialog" id="botao_audioDialog1" onclick="iniciarLeitura1()">
                         <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                        <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura"  class="icon_pausa" style="display:none;">
                     </button>
                 </dialog>
-
+    
                 <button class="requisito" onclick="abrir_dialog1()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
-
+    
             <li>
                 <dialog id="dialog_2" class="dialog">
                     <button onclick="fechar_dialog2()" class="botao_fecharDialog">X</button>
     
                     <h1 style="text-align: center;">Título 2</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Eos quod harum magni 
-                        aperiam, et adipisci recusandae sint 
-                        sapiente quisquam culpa ratione itaque 
-                        facere exercitationem ex consequuntur 
-                        sit aut debitis quas.  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
                     </p>
     
-                    <button class="botao_audioDialog" id="botao_audioDialog2">
+                    <button class="botao_audioDialog" id="botao_audioDialog2" onclick="iniciarLeitura2()">
                         <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                        <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
                     </button>
                 </dialog>
-
+    
                 <button class="requisito" onclick="abrir_dialog2()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
-
+    
             <li>
                 <dialog id="dialog_3" class="dialog">
                     <button onclick="fechar_dialog3()" class="botao_fecharDialog">X</button>
     
                     <h1 style="text-align: center;">Título 3</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Eos quod harum magni 
-                        aperiam, et adipisci recusandae sint 
-                        sapiente quisquam culpa ratione itaque 
-                        facere exercitationem ex consequuntur 
-                        sit aut debitis quas.  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
                     </p>
     
-                    <button class="botao_audioDialog" id="botao_audioDialog3">
+                    <button class="botao_audioDialog" id="botao_audioDialog3" onclick="iniciarLeitura3()">
                         <img class="img_audioDialog" src="/src/public/img/audio.png" alt="">
+                        <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
                     </button>
                 </dialog>
-
+    
                 <button class="requisito" onclick="abrir_dialog3()">
                     <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
@@ -105,6 +95,7 @@
             </li>
         </ul>
     </main>
+    
 
     <main id="conteinner_informacoes">
         <h1 class="title_secao">Impedimentos Definitivos</h1>
@@ -125,8 +116,9 @@
                     <strong>Hepatite viral (A):</strong> após os 11 anos de idade, se trouxer o exame do diagnóstico da doença, 
                     será avaliado pelo médico da triagem.
                 </p>
-                <button class="botao_audio">
+                <button class="botao_audio" onclick="lerTexto('informacao1')">
                     <img class="img_audio" src="/src/public/img/audio.png" alt="">
+                    <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
                 </button>
             </div>
             <div class="area_img">
@@ -134,6 +126,32 @@
             </div>
         </div>
         <div class="informacao" id="informacao2">
+            <div class="area_texto">
+                <h1 style="text-align: center;">Hepatite Após 11 anos de Idade</h1>
+                <p class="texto" style="text-align: justify;">
+                    <strong>Após o 11º aniversário:</strong> Recusa Definitiva;
+                    <br>
+                    <br>
+                    <strong>Hepatite B ou C após ou antes dos 10 anos:</strong> Recusa definitiva. 
+                    <br>
+                    <br>
+                    <strong>Hepatite por Medicamento:</strong> apto após a cura e avaliado clinicamente. 
+                    <br>
+                    <br>
+                    <strong>Hepatite viral (A):</strong> após os 11 anos de idade, se trouxer o exame do diagnóstico da doença, 
+                    será avaliado pelo médico da triagem.
+                </p>
+                <button class="botao_audio" onclick="lerTexto('informacao2')">
+                    <img class="img_audio" src="/src/public/img/audio.png" alt="">
+                    <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
+                </button>
+            </div>
+            <div class="area_img">
+                <img class="img_informacao" src="src/public/img/hepatite.png" alt="">
+            </div>
+        </div>
+        
+        <div class="informacao" id="informacao3">
             <div class="area_texto">
                 <h1 style="text-align: center;">Doenças Infecciosas Transmissíveis pelo Sangue:</h1>
                 <p class="texto">
@@ -148,16 +166,17 @@
                     <br>
                     <strong>Doença de Chagas.</strong>
                 </p>
-                <button class="botao_audio">
+                <button class="botao_audio" onclick="lerTexto('informacao3')">
                     <img class="img_audio" src="/src/public/img/audio.png" alt="">
+                    <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
                 </button>
             </div>
             <div class="area_img">
-                <!--Trocar a imagem, pois ela não centraliza-->
+                <!-- Trocar a imagem, pois ela não centraliza -->
                 <img class="img_informacao" src="src/public/img/check.png" alt="">
             </div>
         </div>
-
+        
         <div class="informacao" id="informacao3">
             <div id="area_textoEsquerda">
                 <h1 style="text-align: center;">Uso de Drogas Ilícitas</h1>
@@ -168,6 +187,7 @@
                 <img id="img_informacaoDireita" src="src/public/img/parkinson.png" alt="">
             </div>
         </div>
+        
     </main>
 
     <main id="conteinner_intervalo">
