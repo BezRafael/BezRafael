@@ -35,9 +35,17 @@
                 <dialog id="dialog_1" class="dialog">
                     <button onclick="fechar_dialog1()" class="botao_fecharDialog">X</button>
     
-                    <h1 style="text-align: center;">Título</h1>
+                    <h1 style="text-align: center;">Faixa Etária</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
+                        <b>-</b> Ter entre <strong>16 a 69 anos</strong>
+                            <br>
+                            <br>
+                        <b>-</b> Para os <strong>menores de 18 anos</strong>, é necessário o 
+                        consentimento e a presença do responsável;
+                            <br>
+                            <br>
+                        <b>-</b> O doador que tiver entre <strong>60 e 69 anos</strong>, só poderá doar se já 
+                        o tiver feito <strong>antes dos 60 anos</strong>;
                     </p>
     
                     <button class="botao_audioDialog" id="botao_audioDialog1" onclick="iniciarLeitura1()">
@@ -47,7 +55,7 @@
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog1()">
-                    <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
+                    <img class="img_requisito" src="/src/public/img/grupo_idade.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
@@ -56,9 +64,15 @@
                 <dialog id="dialog_2" class="dialog">
                     <button onclick="fechar_dialog2()" class="botao_fecharDialog">X</button>
     
-                    <h1 style="text-align: center;">Título 2</h1>
+                    <h1 style="text-align: center;">Bem-Estar</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
+                        <b>-</b> Pesar no mínimo <strong>50 kg;</strong> 
+                            <br>  
+                            <br>           
+	                    <b>-</b> Estar alimentado. Evite alimentos gordurosos nas <strong>3 horas que antecedem a doação;</strong>
+                            <br>
+                            <br>
+	                    <b>-</b> Ter dormido pelo menos <strong>6 horas</strong> nas últimas 24 horas;
                     </p>
     
                     <button class="botao_audioDialog" id="botao_audioDialog2" onclick="iniciarLeitura2()">
@@ -68,7 +82,7 @@
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog2()">
-                    <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
+                    <img class="img_requisito" src="/src/public/img/bem_estar.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
@@ -77,9 +91,30 @@
                 <dialog id="dialog_3" class="dialog">
                     <button onclick="fechar_dialog3()" class="botao_fecharDialog">X</button>
     
-                    <h1 style="text-align: center;">Título 3</h1>
+                    <h1 style="text-align: center;">Documentos Necessários</h1>
                     <p style="text-align: center;" class="paragrafo_dialog">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod harum magni aperiam, et adipisci recusandae sint sapiente quisquam culpa ratione itaque facere exercitationem ex consequuntur sit aut debitis quas.
+                       <strong>Apresentar:</strong>
+                            <br>
+                            <br>
+                        <b>-</b> Documento de identificação com fotografia, emitido por órgão oficial. 
+                            <br>
+                            <br>
+                        <b>-</b> Carteira de Identidade, 
+                            <br>
+                            <br>
+                        <b>-</b> Carteira Nacional de Habilitação, 
+                            <br>
+                            <br>
+                        <b>-</b> Carteira de Trabalho, 
+                            <br>
+                            <br>
+                        <b>-</b> Passaporte, 
+                            <br>
+                            <br>
+                        <b>-</b> Registro Nacional de Estrangeiro, 
+                            <br>
+                            <br>
+                        <b>-</b> Certificado de Reservista ou Carteira Profissional emitida por classe.
                     </p>
     
                     <button class="botao_audioDialog" id="botao_audioDialog3" onclick="iniciarLeitura3()">
@@ -89,7 +124,7 @@
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog3()">
-                    <img class="img_requisito" src="/src/public/img/enfermeira_bolsaSangue.png" alt="">
+                    <img class="img_requisito" src="/src/public/img/documentos.png" alt="">
                     <img class="gif_clique" src="/src/public/img/click.gif" alt="">
                 </button>
             </li>
@@ -97,24 +132,22 @@
     </main>
     
 
-    <main id="conteinner_informacoes">
-        <h1 class="title_secao">Impedimentos Definitivos</h1>
+    <section id="conteinner_informacoes">
+        <h1 class="title_secao">Impedimentos Temporários</h1>
 
         <div class="informacao" id="informacao1">
             <div class="area_texto">
-                <h1 style="text-align: center;">Hepatite Após 11 anos de Idade</h1>
-                <p class="texto" style="text-align: justify;">
-                    <strong>Após o 11º aniversário:</strong> Recusa Definitiva;
+                <h1 style="text-align: center;">Doenças</h1>
+                <p class="texto" style="text-align: center;">
+                    Aguarde <strong>7 dias após o desaparecimento dos sintomas;</strong>
                         <br>
                         <br>
-                    <strong>Hepatite B ou C após ou antes dos 10 anos:</strong> Recusa definitiva. 
+                    <b>-</b> Gripe
                         <br>
+                    <b>-</b> Resfriado
                         <br>
-                    <strong>Hepatite por Medicamento:</strong> apto após a cura e avaliado clinicamente. 
+                    <b>-</b> Febre
                         <br>
-                        <br>
-                    <strong>Hepatite viral (A):</strong> após os 11 anos de idade, se trouxer o exame do diagnóstico da doença, 
-                    será avaliado pelo médico da triagem.
                 </p>
                 <button class="botao_audio" onclick="lerTexto('informacao1')">
                     <img class="img_audio" src="/src/public/img/audio.png" alt="">
@@ -122,24 +155,20 @@
                 </button>
             </div>
             <div class="area_img">
-                <img class="img_informacao" src="src/public/img/hepatite.png" alt="">
+                <img class="img_informacao" src="src/public/img/pessoa_doente.png" alt="">
             </div>
         </div>
         <div class="informacao" id="informacao2">
             <div class="area_texto">
-                <h1 style="text-align: center;">Hepatite Após 11 anos de Idade</h1>
-                <p class="texto" style="text-align: justify;">
-                    <strong>Após o 11º aniversário:</strong> Recusa Definitiva;
-                    <br>
-                    <br>
-                    <strong>Hepatite B ou C após ou antes dos 10 anos:</strong> Recusa definitiva. 
-                    <br>
-                    <br>
-                    <strong>Hepatite por Medicamento:</strong> apto após a cura e avaliado clinicamente. 
-                    <br>
-                    <br>
-                    <strong>Hepatite viral (A):</strong> após os 11 anos de idade, se trouxer o exame do diagnóstico da doença, 
-                    será avaliado pelo médico da triagem.
+                <h1 style="text-align: center;">Gestantes</h1>
+                <p class="texto" style="text-align: center;">
+                    Período gestacional;
+                        <br>
+                        <br>
+	                <b>-</b> Período pós-gravidez: <strong>90 dias</strong> para parto normal e <strong>180 dias</strong> para cesariana;
+                        <br>
+                        <br>
+                    <b>-</b> Amamentação: até <strong>12 meses</strong> após o parto;
                 </p>
                 <button class="botao_audio" onclick="lerTexto('informacao2')">
                     <img class="img_audio" src="/src/public/img/audio.png" alt="">
@@ -147,24 +176,28 @@
                 </button>
             </div>
             <div class="area_img">
-                <img class="img_informacao" src="src/public/img/hepatite.png" alt="">
+                <img class="img_informacao" src="src/public/img/mulher_gestante.png" alt="">
             </div>
         </div>
         
         <div class="informacao" id="informacao3">
             <div class="area_texto">
-                <h1 style="text-align: center;">Doenças Infecciosas Transmissíveis pelo Sangue:</h1>
-                <p class="texto">
-                    <Strong>Hepatites B e C;</Strong> 
-                    <br>
-                    <br>
-                    <strong>AIDS (Vírus HIV);</strong>
-                    <br>
-                    <br>
-                    Doenças associadas aos <strong>Vírus HTLV I e II;</strong> 
-                    <br>
-                    <br>
-                    <strong>Doença de Chagas.</strong>
+                <h1 style="text-align: center;">Tempo de Doação após Vacinação</h1>
+                <p class="texto" style="text-align: center;">
+                    <strong>Vacinas contra Covid:</strong>
+                        <br>
+                    <b>-</b> CoronaVac – 48h após cada dose;
+                        <br>
+                    <b>-</b> Oxford – 7 dias após cada dose;
+                        <br> 
+                    <b>-</b> Pfizer – 7dias após cada dose;
+                        <br>
+                    <b>-</b> Janssen – 7 dias após.
+                        <br>
+                        <br>
+                    <strong>Vacina contra Gripe:</strong>
+                        <br>
+                    <b>-</b> Influenza – 48h.
                 </p>
                 <button class="botao_audio" onclick="lerTexto('informacao3')">
                     <img class="img_audio" src="/src/public/img/audio.png" alt="">
@@ -173,24 +206,165 @@
             </div>
             <div class="area_img">
                 <!-- Trocar a imagem, pois ela não centraliza -->
-                <img class="img_informacao" src="src/public/img/check.png" alt="">
+                <img class="img_informacao" src="src/public/img/vacinacao.png" alt="">
             </div>
         </div>
-        
-        <div class="informacao" id="informacao3">
-            <div id="area_textoEsquerda">
-                <h1 style="text-align: center;">Uso de Drogas Ilícitas</h1>
-                <img id="img_informacaoEsquerda" src="src/public/img/drogas.png" alt="">
-            </div>
-            <div id="area_textoDireita">
-                <h1 style="text-align: center;">Doença de Parkinson</h1>
-                <img id="img_informacaoDireita" src="src/public/img/parkinson.png" alt="">
-            </div>
-        </div>
-        
-    </main>
 
-    <main id="conteinner_intervalo">
+        <div class="informacao" id="informacao4">
+            <div class="area_texto">
+                <h1 style="text-align: center;">Outros Impedimentos</h1>
+                <p class="texto" style="text-align: center;">
+                    <b>-</b> Ingestão de bebida alcoólica nas <strong>12 horas que antecedem</strong> a doação;
+                        <br>
+                        <br>
+                    <b>-</b> Tatuagem ou piercing nos <strong>últimos 12 meses</strong> (piercing em cavidade oral ou região genital impedem a doação);
+                        <br>
+                        <br>
+                    <b>-</b> Extração dentária: <strong>72 horas;</strong>
+                        <br>
+                        <br>
+                    <b>-</b> Transfusão de sangue: <strong>1 ano;</strong>
+                        <br>
+                        <br>
+                    <b>-</b> Exames/procedimentos com utilização de endoscópio nos <strong>últimos 12 meses;</strong>
+                        <br>
+                        <br>
+                    <b>-</b> Ter sido exposto a situações de risco acrescido para infecções sexualmente transmissíveis <strong>(aguardar 12 meses após a exposição);</strong>
+                        <br>
+                        <br>
+                    <b>-</b> Quem teve Covid só pode doar <strong>30 dias</strong> após cessarem todos os sintomas.
+                </p>
+                <!--mudar o onclick e ajustar no js-->
+                <button class="botao_audio" onclick="lerTexto('informacao3')">
+                    <img class="img_audio" src="/src/public/img/audio.png" alt="">
+                    <img src="/src/public/img/icon_pausa.png" alt="Parar Leitura" class="icon_pausa" style="display:none;">
+                </button>
+            </div>
+            <div class="area_img">
+                <img class="img_informacao" src="src/public/img/outros_impedimentos.png" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <section id="conteinner_impedimentos">
+        <h1 class="title_secao">Impedimentos Definitivos</h1>
+           <div class="impedimento" id="impedimento1">
+                <div class="areaTexto_impedimento">
+                    <h1 style="text-align: center;">Doenças</h1>
+                    <p class="texto" style="text-align: center;">
+                        <strong>Doenças transmissíveis pelo sangue (Evidência clínica ou laboratorial):</strong>
+                                <br>
+                                <br>
+                            <b>-</b> Hepatite após os <strong>11 anos</strong> de idade;
+                                <br>
+                                <br>
+                            <b>-</b> Hepatites <b>B</b> e <b>C,</b>
+                                <br>
+                                <br>
+                            <b>-</b> AIDS (vírus HIV),
+                                <br>
+                                <br>
+                            <b>-</b> Sífilis 
+                                <br>
+                                <br>
+                            <b>-</b> Doenças associadas aos vírus <strong>HTLV I</strong> e <strong>II,</strong> 
+                                <br>
+                                <br>
+                            <b>-</b> Doença de Chagas
+                                <br>
+                                <br>
+                            <b>-</b> Malária;
+                                <br>
+                                <br>
+                        <strong>Doenças Hematológicas:</strong>
+                                <br>
+                                <br>
+                            <b>-</b> Anemia,
+                                <br>
+                                <br>
+                            <b>-</b> Trombocitopenia imune,
+                                <br>
+                                <br>
+                            <b>-</b> Trombose,
+                                <br>
+                                <br>
+                            <b>-</b> Trombofilias,
+                                <br>
+                                <br>
+                            <b>-</b> Distúrbio do metabolismo do ferro,
+                                <br>
+                                <br>
+                            <b>-</b> Leucemias agudas e crônicas,
+                                <br>
+                                <br>
+                            <b>-</b> Linfomas,
+                                <br>
+                                <br>
+                            <b>-</b> Mieloma múltiplo,
+                                <br>
+                                <br>
+                            <b>-</b> Síndrome mielodisplásica.
+                                <br>
+                                <br>
+                        <strong>Outras Doenças:</strong>
+                                <br>
+                                <br>
+                            <b>-</b> Cardíaca;
+                                <br>
+                                <br>
+                            <b>-</b> Renais;
+                                <br>
+                                <br>
+                            <b>-</b> Pulmonares;
+                                <br>
+                                <br>
+                            <b>-</b> Hepáticas;
+                                <br>
+                                <br>
+                            <b>-</b> Autoimunes;
+                                <br>
+                                <br>
+                            <b>-</b> Diabetes;
+                                <br>
+                                <br>
+                            <b>-</b> Hipertireoidismo;
+                                <br>
+                                <br>
+                            <b>-</b> Hanseníase;
+                                <br>
+                                <br>
+                            <b>-</b> Tuberculose;
+                                <br>
+                                <br>
+                            <b>-</b> Câncer 
+                    </p>
+                </div>
+                <div class="areaImg_impedimento">
+                    <!--Procurar img correspondente ao conteúdo-->
+                    <img src="src/public/img/hepatite.png" alt="" class="img_impedimento">
+                </div>
+           </div>
+
+           <div class="impedimento" id="impedimento2">
+                <div class="areaTexto_impedimento">
+                    <h1 style="text-align: center;">Outros Impedimentos</h1>
+                    <p class="texto" style="text-align: justify;">
+                        <b>-</b> Uso de drogas ilícitas injetáveis;
+                            <br>
+                            <br>
+                        <b>-</b> Sangramentos anormais;
+                            <br>
+                            <br>
+                        <b>-</b> Convulsões
+                    </p>
+                </div>
+                <div class="areaImg_impedimento">
+                    <img src="src/public/img/outros_impedimentos.png" alt="" class="img_impedimento">
+                </div>
+           </div>
+    </section>
+
+    <section id="conteinner_intervalo">
         <h1 class="title_secao">Intervalo de Doação</h1>
         <div id="intervalo">
             <div id="intervalo_homens">
@@ -212,7 +386,7 @@
                 <img id="img_mulheres" src="/src/public/img/mulher.png" alt="">
             </div>
         </div>
-    </main>
+    </section>
 
     <footer id="conteinner_rodape">
         <ul id="rodape_sobre">
