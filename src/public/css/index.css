@@ -26,8 +26,8 @@ body{
 }
 
 #img_logo{
-    width: 60px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 /*ÁREA DO BANNER*/
@@ -42,7 +42,6 @@ body{
 
 #texto_banner{
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: darkred;
     color: white;
@@ -52,6 +51,7 @@ body{
     height: 100%;
     font-size: 19px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
 }
 
 .imagem_banner{
