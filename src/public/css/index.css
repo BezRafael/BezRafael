@@ -399,6 +399,7 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 100%;
+        padding-left: 0;
     }
 
     .imagem_banner{
@@ -442,8 +443,8 @@ body{
 /*ÁREA "IMPEDIMENTOS TEMPORÁRIOS"*/
     #conteinner_informacoes{
         width: 100%;
-        gap: 200px;
-        margin-bottom: 3050px;
+        gap: 150px;
+        margin-bottom: 2950px;
     }
 
     .title_secao{
@@ -461,7 +462,7 @@ body{
     }
 
     #informacao3{
-        margin-bottom: 180px;
+        margin-bottom: 280px;
     }
 
     .area_texto{
@@ -494,8 +495,8 @@ body{
 /*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
     #conteinner_impedimentos{
         width: 100%;
-        gap: 280px;
-        margin-bottom: 1180px;
+        gap: 250px;
+        margin-bottom: 1120px;
     }
 
     .impedimento{
@@ -593,6 +594,7 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 100%;
+        padding-left: 0;
     }
 
     .imagem_banner{
@@ -636,8 +638,8 @@ body{
 /*ÁREA "IMPEDIMENTOS TEMPORÁRIOS"*/
     #conteinner_informacoes{
         width: 100%;
-        gap: 220px;
-        margin-bottom: 3150px;
+        gap: 180px;
+        margin-bottom: 2900px;
     }
 
     .title_secao{
@@ -651,15 +653,16 @@ body{
     }
 
     #informacao1{
-        margin-bottom: 80px;
+        margin-top: -10px;
+        margin-bottom: 0px;
     }
 
     #informacao2{
-        margin-bottom: 180px;
+        margin-bottom: 100px;
     }
 
     #informacao3{
-        margin-bottom: 210px;
+        margin-bottom: 250px;
     }
 
     .area_texto{
@@ -794,6 +797,7 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 100%;
+        padding-left: 0;
     }
 
     .imagem_banner{
@@ -837,8 +841,8 @@ body{
 /*ÁREA "IMPEDIMENTOS TEMPORÁRIOS"*/
     #conteinner_informacoes{
         width: 100%;
-        gap: 300px;
-        margin-bottom: 3450px;
+        gap: 250px;
+        margin-bottom: 3200px;
     }
 
     .title_secao{
@@ -852,15 +856,16 @@ body{
     }
 
     #informacao1{
-        margin-bottom: 80px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     #informacao2{
-        margin-bottom: 200px;
+        margin-bottom: 180px;
     }
 
     #informacao3{
-        margin-bottom: 200px;
+        margin-bottom: 220px;
     }
 
     .area_texto{
@@ -890,11 +895,11 @@ body{
         width: 100%;
     }
 
-/*ÁREA "IMPEDIMENTOS TEMPORÁRIOS"*/
+/*ÁREA "IMPEDIMENTOS DEFINITIVOS"*/
     #conteinner_impedimentos{
         width: 100%;
-        gap: 220px;
-        margin-bottom: 1000px;
+        gap: 250px;
+        margin-bottom: 1090px;
     }
 
     .impedimento{
@@ -903,7 +908,7 @@ body{
     }
 
     #impedimento1{
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     .areaTexto_impedimento{
@@ -998,6 +1003,7 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 100%;
+        padding-left: 0;
     }
 
     .imagem_banner{
@@ -1220,7 +1226,7 @@ body{
 /*ÁREA "IMPEDIMENTOS TEMPORÁRIOS"*/
     #conteinner_informacoes{
         width: 100%;
-        margin-bottom: 1300px
+        margin-bottom: 1280px
     }
 
     .title_secao{
@@ -1286,12 +1292,12 @@ body{
 
     #intervalo_homens{
         width: 100%;
-        font-size: 30px;
+        font-size: 28px;
     }
     
     #intervalo_mulheres{
         width: 100%;
-        font-size: 30px;
+        font-size: 28px;
     }
 
 /*ÁREA DO RODAPÉ "SOBRE"*/
