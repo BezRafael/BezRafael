@@ -31,3 +31,4 @@ function fechar_dialog3(){
     let dialog_3 = document.getElementById('dialog_3')
     dialog_3.close()
 }
+

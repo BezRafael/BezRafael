@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/public/css/index.css">
-    <script src="/src/public/js/index.js"></script>
-    <script src="/src/public/js/script.js" defer></script>
-   
+    <script src="/src/public/js/index.js" defer></script>
     <title></title>
 </head>
 <body>
     <header id="barra_inicial">
-        <img id="img_logo" src="/src/public/img/logo_doeVida.png" alt="">
+        <img id="img_logo" src="/src/public/img/logo_doeVida.png" alt="" title="Logomarca barra inical (uma gota de sangue com uma cruz da saúde)">
         <h1>Doe Vida</h1>
     </header>
 
@@ -23,7 +21,7 @@
         </div>
 
         <div class="imagem_banner">
-            <img class="imagem_banner" src="src/public/img/img_banner.svg" alt="">
+            <img class="imagem_banner" src="src/public/img/img_banner.svg" alt="" title="Imagem do banner (personagens doando sangue)">
         </div>
     </main>
 
@@ -34,7 +32,7 @@
                     <button onclick="fechar_dialog1()" class="botao_fecharDialog">X</button>
     
                     <h1 style="text-align: center;">Faixa Etária</h1>
-                    <p style="text-align: center;" class="paragrafo_dialog">
+                    <p style="text-align: center;" class="paragrafo_dialog" id="paragrafo_dialog1">
                         <b>-</b> Ter entre <strong>16 a 69 anos</strong>
                             <br>
                             <br>
@@ -45,6 +43,9 @@
                         <b>-</b> O doador que tiver entre <strong>60 e 69 anos</strong>, só poderá doar se já 
                         o tiver feito <strong>antes dos 60 anos</strong>;
                     </p>
+                    <button class="botao_audioDialog">
+                        <img class="img_audioDialog" src="src/public/img/audio.png" alt="">
+                    </button>
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog1()">
@@ -67,6 +68,9 @@
                             <br>
 	                    <b>-</b> Ter dormido pelo menos <strong>6 horas</strong> nas últimas 24 horas;
                     </p>
+                    <button class="botao_audioDialog" onclick="audio_Dialog2()">
+                        <img class="img_audioDialog" src="src/public/img/audio.png" alt="">
+                    </button>
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog2()">
@@ -104,6 +108,9 @@
                             <br>
                         <b>-</b> Certificado de Reservista ou Carteira Profissional emitida por classe.
                     </p>
+                    <button class="botao_audioDialog" onclick="audio_Dialog3()">
+                        <img class="img_audioDialog" src="src/public/img/audio.png" alt="">
+                    </button>
                 </dialog>
     
                 <button class="requisito" onclick="abrir_dialog3()">
@@ -132,6 +139,9 @@
                     <b>-</b> Febre;
                         <br>
                 </p>
+                <button class="botao_audio">
+                    <img class="img_audio" src="src/public/img/audio.png" alt="">
+                </button>
             </div>
             <div class="area_img">
                 <img class="img_informacao" src="src/public/img/pessoa_doente.png" alt="">
@@ -149,6 +159,9 @@
                         <br>
                     <b>-</b> Amamentação: até <strong>12 meses</strong> após o parto;
                 </p>
+                <button class="botao_audio">
+                    <img class="img_audio" src="src/public/img/audio.png" alt="">
+                </button>
             </div>
             <div class="area_img">
                 <img class="img_informacao" src="src/public/img/mulher_gestante.png" alt="">
@@ -174,6 +187,9 @@
                         <br>
                     <b>-</b> Influenza – 48h.
                 </p>
+                <button class="botao_audio">
+                    <img class="img_audio" src="src/public/img/audio.png" alt="">
+                </button>
             </div>
             <div class="area_img">
                 <!-- Trocar a imagem, pois ela não centraliza -->
@@ -205,6 +221,9 @@
                         <br>
                     <b>-</b> Quem teve Covid só pode doar <strong>30 dias</strong> após cessarem todos os sintomas.
                 </p>
+                <button class="botao_audio">
+                    <img class="img_audio" src="src/public/img/audio.png" alt="">
+                </button>
             </div>
             <div class="area_img">
                 <img class="img_informacao" src="src/public/img/outros_impedimentos.png" alt="">
@@ -304,6 +323,9 @@
                                 <br>
                             <b>-</b> Câncer.
                     </p>
+                    <button class="botao_audio">
+                        <img class="img_audio" src="src/public/img/audio.png" alt="">
+                    </button>
                 </div>
                 <div class="areaImg_impedimento">
                     <img src="src/public/img/hepatite.png" alt="" class="img_impedimento">
@@ -322,6 +344,9 @@
                             <br>
                         <b>-</b> Convulsões.
                     </p>
+                    <button class="botao_audio">
+                        <img class="img_audio" src="src/public/img/audio.png" alt="">
+                    </button>
                 </div>
                 <div class="areaImg_impedimento">
                     <img src="src/public/img/outros_impedimentos.png" alt="" class="img_impedimento">
